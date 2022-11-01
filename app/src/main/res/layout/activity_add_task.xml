@@ -9,7 +9,7 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/title_hint">
+        android:hint="Nama Barang">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/add_ed_title"
@@ -23,7 +23,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:hint="@string/description_hint">
+        android:hint="Nama">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/add_ed_description"
@@ -53,8 +53,54 @@
             android:id="@+id/add_tv_due_date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/due_date" />
+            android:text="Tanggal kembali" />
     </LinearLayout>
 
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Departemen"
+        android:layout_marginTop="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="keterangan">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:textSize="15sp"
+        android:text="Tanda Tangan"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:contentDescription="@string/image_sign"
+        android:paddingTop="10dp"
+        android:paddingStart="30dp"
+        android:paddingEnd="10dp"
+        android:src="@drawable/ic_baseline_image_24" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="@string/tambah_gambar"/>
 
 </LinearLayout>

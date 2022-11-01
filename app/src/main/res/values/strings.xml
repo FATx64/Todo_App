@@ -30,4 +30,6 @@
     <string name="filter_all">All</string>
     <string name="filter_active">Active</string>
     <string name="filter_completed">Completed</string>
+    <string name="image_sign">Image Sign</string>
+    <string name="tambah_gambar">tambah gambar</string>
 </resources>
