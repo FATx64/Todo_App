@@ -18,6 +18,8 @@ class DetailTaskActivity : AppCompatActivity() {
     private lateinit var btnDelete : Button
     private lateinit var edtTitle: TextInputEditText
     private lateinit var edtDesc: TextInputEditText
+    private lateinit var edtDepartemen : TextInputEditText
+    private lateinit var edtKeterangan : TextInputEditText
     private lateinit var edtDueDate : TextInputEditText
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -41,6 +43,7 @@ class DetailTaskActivity : AppCompatActivity() {
                 edtDueDate.text = Editable.Factory
                     .getInstance()
                     .newEditable(DateConverter.convertMillisToString(task.dueDateMillis))
+
             }
 
 

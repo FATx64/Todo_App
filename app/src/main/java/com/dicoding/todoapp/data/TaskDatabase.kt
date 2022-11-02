@@ -18,7 +18,7 @@ import java.util.concurrent.Executors
 //TODO 3 : Define room database class and prepopulate database using JSON
 @Database(
     entities = [Task::class],
-    version = 1,
+    version = 2,
     exportSchema = false
 )
 abstract class TaskDatabase : RoomDatabase() {
@@ -64,7 +64,9 @@ abstract class TaskDatabase : RoomDatabase() {
                                 item.getString("title"),
                                 item.getString("description"),
                                 item.getLong("dueDate"),
-                                item.getBoolean("completed")
+                                item.getBoolean("completed"),
+                                item.getString("departemen"),
+                                item.getString("keterangan")
                             )
                         )
                     }

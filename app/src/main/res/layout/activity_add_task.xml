@@ -53,19 +53,20 @@
             android:id="@+id/add_tv_due_date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Tanggal kembali" />
+            android:text="@string/tanggal_kembali" />
     </LinearLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Departemen"
+        android:hint="@string/departemen"
         android:layout_marginTop="16dp">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/ed_departemen"
             />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -78,7 +79,8 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:id="@+id/ed_keterangan"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
@@ -89,6 +91,7 @@
         android:text="Tanda Tangan"/>
 
     <ImageView
+        android:id="@+id/btn_image"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:contentDescription="@string/image_sign"
@@ -98,9 +101,9 @@
         android:src="@drawable/ic_baseline_image_24" />
 
     <Button
+        android:id="@+id/btn_add_sign"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
         android:text="@string/tambah_gambar"/>
 
 </LinearLayout>

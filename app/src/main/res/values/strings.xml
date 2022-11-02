@@ -32,4 +32,7 @@
     <string name="filter_completed">Completed</string>
     <string name="image_sign">Image Sign</string>
     <string name="tambah_gambar">tambah gambar</string>
+    <string name="departemen">Departemen</string>
+    <string name="tanggal_kembali">Tanggal kembali</string>
+    <string name="keterangan">keterangan</string>
 </resources>

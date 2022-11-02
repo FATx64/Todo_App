@@ -39,7 +39,6 @@ class TaskActivity : AppCompatActivity() {
             startActivity(addIntent)
         }
 
-        //TODO 6 : Initiate RecyclerView with LayoutManager
         recycler = findViewById(R.id.rv_task)
         adapter = TaskAdapter{task, state ->
             taskViewModel.completeTask(task, state)
@@ -54,12 +53,10 @@ class TaskActivity : AppCompatActivity() {
 
         taskViewModel.tasks.observe(this, Observer(this::showRecyclerView))
 
-        //TODO 15 : Fixing bug : snackBar not show when task completed
         taskViewModel.snackbarText.observe(this, Observer(this::showSnackBar))
     }
 
     private fun showRecyclerView(task: PagedList<Task>) {
-        //TODO 7 : Submit pagedList to adapter and update database when onCheckChange
         adapter.submitList(task)
     }
 
