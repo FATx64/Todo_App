@@ -31,6 +31,8 @@ class DetailTaskActivity : AppCompatActivity() {
         edtTitle = findViewById(R.id.detail_ed_title)
         edtDesc = findViewById(R.id.detail_ed_description)
         edtDueDate = findViewById(R.id.detail_ed_due_date)
+        edtDepartemen = findViewById(R.id.detail_departemen)
+        edtKeterangan = findViewById(R.id.detail_keterangan)
 
         val taskId = intent.getIntExtra(TASK_ID, 0)
         val viewfactory = ViewModelFactory.getInstance(this)
@@ -43,6 +45,8 @@ class DetailTaskActivity : AppCompatActivity() {
                 edtDueDate.text = Editable.Factory
                     .getInstance()
                     .newEditable(DateConverter.convertMillisToString(task.dueDateMillis))
+                edtDepartemen.text = Editable.Factory.getInstance().newEditable(task.departemen)
+                edtKeterangan.text = Editable.Factory.getInstance().newEditable(task.keterangan)
 
             }
 
