@@ -30,7 +30,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="top"
-            android:lines="5" />
+            android:lines="1" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -91,7 +91,7 @@
         android:text="Tanda Tangan"/>
 
     <ImageView
-        android:id="@+id/btn_image"
+        android:id="@+id/iv_image_preview"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:contentDescription="@string/image_sign"
@@ -101,7 +101,7 @@
         android:src="@drawable/ic_baseline_image_24" />
 
     <Button
-        android:id="@+id/btn_add_sign"
+        android:id="@+id/btn_add_pict"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/tambah_gambar"/>
